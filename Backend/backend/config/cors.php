@@ -1,8 +1,8 @@
 <?php
 /** */
-header("Access-Control-Allow-Origin: http://127.0.0.1:5500"); // Módosítsd az eredetet szükség esetén
+/* header("Access-Control-Allow-Origin: http://127.0.0.1:5500"); // Módosítsd az eredetet szükség esetén
 header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE");
-header("Access-Control-Allow-Headers: Content-Type, Authorization");
+header("Access-Control-Allow-Headers: Content-Type, Authorization"); */
 
 return [
 
@@ -19,7 +19,7 @@ return [
     |
     */
 
-    'paths' => ['api/*', 'sanctum/csrf-cookie'],
+    'paths' => ['*', 'sanctum/csrf-cookie'],
 
     'allowed_methods' => ['*'],
 
