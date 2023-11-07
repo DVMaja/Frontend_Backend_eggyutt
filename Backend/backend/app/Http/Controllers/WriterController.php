@@ -17,11 +17,11 @@ class WriterController extends Controller
     public function store(Request $request)
     {
         //ellenőrizd az adatokat, például a beérkezett kéréseket
-        $writer = new Writer();
-        $writer->nev = $request->nev;
-        $writer->szul = $request->szul;
-        $writer->save();
-        return response()->json($writer);
+        $record = new Writer();
+        $record->nev = $request->nev;
+        $record->szul = $request->szul;
+        $record->save();
+        //return response()->json($writer);
     }
     public function show($id)
     {
